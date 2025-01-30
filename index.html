@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/6ea30a965d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Natures Platter</title>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .sora-font{
+            font-family: "Sora", serif;
+        }
+        .bar{
+            display: none;
+        }
+        /* query */
+        @media screen and (max-width:640px) {
+            nav ul li,
+            nav .hidden-div,
+            br{
+                display: none;
+            }
+            .bar{
+                display: block;
+                margin-right: 27px;
+                font-size: 30px;
+            }
+            hr{
+                color: #179800;
+            }
+            
+        }
+    </style>
+</head>
+<body class="sora-font">
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] mb-[140px]">
+        <!-- navbar section -->
+         <nav class="lg:max-w-[80%] mx-auto mt-7 mb-32">
+            <!-- nav container -->
+            <div class="flex justify-between items-center">
+                <!-- nav image -->
+                <div class="ml-7">
+                    <img src="c2-assets/logo-header.png" alt="logo">
+                </div>
+                <!-- nav list -->
+                <div class="">
+                    <ul class="flex gap-8">
+                        <li><a href="">Product</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+                <!-- nav icon -->
+                 <div>
+                    <div class="hidden-div space-x-6">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <button class="border border-[#179800] px-7 py-2 rounded-lg">Login</button>
+                    <button class="bg-[#179800] px-7 py-2 text-white rounded-lg">Register</button>
+                    </div>
+                    <i class="fa-solid fa-bars bar text-[#179800]"></i>
+                 </div>
+            </div>
+            <hr class="text-[#179800] font-bold mt-2 lg:hidden">
+         </nav>
+         <!-- banner section -->
+          <div class="">
+            <!-- text content -->
+             <div class="text-center mx-3">
+                <h1 class="text-6xl font-semibold mb-8">Freshness <span class="text-[#179800]">You Can <br>
+                    Count</span> On, Prices You’ll Love!</h1>
+                    <p class="text-gray-500">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+             </div>
+             <!-- image  -->
+              <div>
+                <img class="max-w-[50%] mx-auto mt-9" src="c2-assets/hero-vegetables.png" alt="">
+              </div>
+          </div>
+    </header>
+
+    <main>
+        <!-- service card section -->
+        <section class="lg:max-w-[85%] mx-auto mb-[140px]">
+            <h1 class="text-5xl font-semibold text-[#179800] mb-12">Services</h1>
+            <!-- service card -->
+             <div class="grid grid-cols-1 justify-items-center gap-6 lg:grid-cols-3">
+                <div class="card bg-[#EFEBE3] w-[424px] h-[367px]">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="c2-assets/service.png"
+                        alt=""
+                        class="rounded-full p-[25px] bg-white w-[30%] mb-5"/>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">24/7 Services </h2>
+                      <p class="text-gray-500">I’m an advocate of writing out numbers up to at least twelve in most situations, using numerals for 13 and beyond: She made four trips to New York. He lived through seven winters in Ithica.</p>
+                    </div>
+                  </div>
+                  <!-- card 2 -->
+                  <div class="card bg-[#EFEBE3] w-[424px] h-[367px]">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="c2-assets/delivery.png"
+                        alt=""
+                        class="rounded-full p-[25px] bg-white w-[30%] mb-5"/>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Fast Delivery</h2>
+                      <p class="text-gray-500">Fast delivery is a delivery service that delivers orders quickly, either on the same day or within a short time frame. Fast delivery is also known as expedited shipping. </p>
+                    </div>
+                  </div>
+                  <!-- card 3 -->
+                  <div class="card bg-[#EFEBE3] w-[424px] h-[367px]">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="c2-assets/healthy.png"
+                        alt=""
+                        class="rounded-full p-[25px] bg-white w-[30%] mb-5"/>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Healthy Products </h2>
+                      <p class="text-gray-500">A healthy paragraph describes the importance of health and how to maintain it. Health is a state of physical, mental, and social well-being. A healthy lifestyle can help people feel good, be productive, </p>
+                    </div>
+                  </div>
+             </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>

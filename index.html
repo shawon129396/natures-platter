@@ -34,18 +34,20 @@
         <!-- nav list -->
         <div class="hidden md:block lg:block">
           <ul class="flex gap-8">
-            <li><a href="">Product</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Contact us</a></li>
+            <li><a class="hover:text-red-500" href="">Product</a></li>
+            <li><a class="hover:text-red-500" href="">Services</a></li>
+            <li><a class="hover:text-red-500" href="">Contact us</a></li>
           </ul>
         </div>
         <!-- nav icon -->
         <div>
           <div class="hidden md:block lg:block space-x-6">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-            <button class="border border-[#179800] px-7 py-2 rounded-lg">Login</button>
-            <button class="bg-[#179800] px-7 py-2 text-white rounded-lg">Register</button>
+            <i class="fa-solid fa-magnifying-glass hover:text-red-500"></i>
+            <i class="fa-solid fa-cart-shopping hover:text-red-500"></i>
+            <button
+              class="hover:text-white hover:bg-green-500 border border-[#179800] px-7 py-2 rounded-lg">Login</button>
+            <button
+              class="hover:text-red-500 hover:bg-gray-950 bg-[#179800] px-7 py-2 text-white rounded-lg">Register</button>
           </div>
           <i class="fa-solid fa-bars block mr-7 text-3xl text-[#179800] md:hidden lg:hidden"></i>
         </div>
@@ -122,7 +124,8 @@
           <div class="pl-8 pt-13 space-y-5">
             <h3 class="text-3xl font-bold text-white">30% off</h3>
             <p>Discover a world of treats, toys, and essentials handpicked for </p>
-            <button class="bg-white py-2 px-7 text-[#111111] rounded-lg">Buy Now</button>
+            <button class="hover:text-white hover:bg-green-500 bg-white py-2 px-7 text-[#111111] rounded-lg">Buy
+              Now</button>
           </div>
           <div class="relative min-h-[200px]">
             <img class="absolute right-4 bottom-0" src="c2-assets/vegetable-offer.png" alt="">
@@ -264,6 +267,51 @@
 
       </div>
     </section>
+    <!-- extra section -->
+    <section class="lg:max-w-[85%] mx-auto mb-[140px]">
+      <h1 class="text-5xl font-semibold text-[#179800] mb-8 pl-12">Vegitable for health</h1>
+      <div class="flex-row justify-items-center items-center lg:flex gap-4 space-y-4">
+        <div class="card bg-[#EFEBE3] w-96 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="c2-assets/lettuce.png" alt="lettuce" class="rounded-full bg-white max-w-44 max-h-24" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Lettuce</h2>
+            <p>Lettuce is a healthy food that's high in fiber and water, and contains vitamins and antioxidants.</p>
+          </div>
+        </div>
+        <div class="card bg-[#EFEBE3] w-96 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="c2-assets/broccoli.png" alt="lettuce" class="rounded-full bg-white max-w-44 max-h-24" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Broccoli</h2>
+            <p>Broccoli is a leafy green vegetable that's high in fiber, vitamins, and minerals. It has many potential
+              health benefits, </p>
+          </div>
+        </div>
+        <div class="card bg-[#EFEBE3] w-96 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="c2-assets/cabbage.png" alt="lettuce" class="rounded-full bg-white max-w-44 max-h-24" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Cabbage</h2>
+            <p>Cabbage is a healthy vegetable that can help with digestion, heart health, and more. Benifite for health
+            </p>
+          </div>
+        </div>
+        <div class="card bg-[#EFEBE3] w-96 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="c2-assets/spinach.png" alt="lettuce" class="rounded-full bg-white max-w-44 max-h-24" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Spinach</h2>
+            <p>improving blood glucose control in people with diabetes, lowering the risk of cancer, and improving bone
+              health.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- arrives section -->
     <section class="lg:max-w-[85%] lg:mx-auto lg:mb-[250px] mb-[320px]">
       <h1 class="text-4xl font-semibold text-[#179800] mb-12 lg:ml-2 ml-3">Arrival & Offers</h1>
@@ -275,7 +323,7 @@
           <div class="space-y-6">
             <img src="c2-assets/dawat-logo.png" alt="">
             <button
-              class="bg-[#63B76D] text-white w-[250px] h-[50px] lg:h[65px] lg:w-[334px] px-10 py-4 mb-3 rounded-lg align-middle">Cook
+              class="hover:text-red-500 hover:bg-white bg-[#63B76D] text-white w-[250px] h-[50px] lg:h[65px] lg:w-[334px] px-10 py-4 mb-3 rounded-lg align-middle">Cook
               Exotic Dishes</button>
             <h3 class="text-2xl font-semibold text-white">UP to 20% OFF</h3>
           </div>
@@ -289,7 +337,8 @@
 
           <div class="space-y-7">
             <img src="c2-assets/india-gate-logo.png" alt="">
-            <button class="bg-[#63B76D] text-white px-10 py-4 rounded-lg">World’s No.1 Rice</button>
+            <button class="hover:text-red-500 hover:bg-white bg-[#63B76D] text-white px-10 py-4 rounded-lg">World’s No.1
+              Rice</button>
             <h3 class="text-2xl font-semibold text-white">UP to 40% OFF</h3>
           </div>
 
@@ -312,18 +361,18 @@
         </div>
         <div class="flex flex-row">
           <ul class="space-y-3">
-            <li><a class="link link-hover">Product</a></li>
-            <li><a class="link link-hover">Services</a></li>
-            <li><a class="link link-hover">Contact us</a></li>
+            <li><a class="hover:text-red-500">Product</a></li>
+            <li><a class="hover:text-red-500">Services</a></li>
+            <li><a class="hover:text-red-500">Contact us</a></li>
           </ul>
         </div>
         <div class="space-y-3">
           <h6 class="footer-title">Follow Us</h6>
           <ul class="flex gap-4">
-            <li><a class="link link-hover"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a class="link link-hover"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a class="link link-hover"><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a class="link link-hover"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a class="hover:text-red-500"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a class="hover:text-red-500"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a class="hover:text-red-500"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a class="hover:text-red-500"><i class="fa-brands fa-linkedin"></i></a></li>
           </ul>
         </div>
       </div>
@@ -338,7 +387,8 @@
               <p class="text-gray-500">Exclusive training tips, ticks, product deals and more.</p>
               <input class="bg-white p-2 rounded-lg" type="text" placeholder="Enter email....">
               <br>
-              <button class="bg-[#179800] text-white px-5 py-3 rounded-lg">Subscribe</button>
+              <button
+                class="hover:text-white hover:bg-black bg-[#179800] text-white px-5 py-3 rounded-lg">Subscribe</button>
             </div>
           </div>
         </div>
